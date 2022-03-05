@@ -1,8 +1,6 @@
 def shift_cipher(a_string, shift):
     # shift states how many letters each letter should be shifted
     # if shift = 3, then A = D, B = E
-
-    #shift is 23
     
     end_shift = 26 - shift 
     range_begin = ord('Z') - shift    
