@@ -5,7 +5,9 @@ def affine_cipher(a_string, a, b):
 
     for char in a_string:
         if char.isalpha():
-            c = (a * (ord(char)- 64) + b) % 26
+            c = ((a * (ord(char)- 64) + b) % 26)
+            if c == 0:
+                c = 26
             encrypted_list.append(chr(c + 64))
             
         else:
